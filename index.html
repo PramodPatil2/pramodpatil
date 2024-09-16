@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pramod Patil's Portfolio</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Google Font for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Minimalist Hero Section with Subtle Background Animation -->
+<section id="hero" class="hero-section">
+    <div class="background-animation">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Pramod Patil</h1>
+      <p>Web Developer | Java Developer</p>
+      <a href="#resume" class="btn btn-primary">View Resume</a>
+    </div>
+  </section>
+  
+  
+
+  <!-- Profile Section with Gradient Background -->
+  <section id="profile" class="profile-section" data-aos="fade-right">
+    <div class="profile-content">
+      <img src="assets/profile_photo.jpg" alt="Pramod Patil" class="profile-photo">
+      <div class="profile-text">
+        <h2>About Me</h2>
+        <p>IT Professional with 3.7 years of extensive experience in Java development, specializing in Java/JEE, Spring Boot, Spring MVC, Hibernate, MySQL, and Microservices. Skilled in building and optimizing REST APIs, with hands-on experience across the full software development lifecycle, including requirements gathering, system analysis and design, development, and deployment management. Proficient in utilizing modern tools and technologies for version control, release management, and testing methodologies to deliver high-quality software solutions.</p>
+        <a href="https://www.linkedin.com/in/pramod-patil-a9a9811a5/" class="btn btn-gradient">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section with Interactive Cards -->
+  <section id="resume" class="resume-section" data-aos="fade-up">
+    <div class="container">
+      <h2>Resume</h2>
+      <div class="resume-grid">
+        <div class="card" data-aos="flip-left">
+          <h4>System Engineer(Java-Developer) - <em>TCS</em> (2021 March - Present)</h4>
+          <p>• Proficient Involvement in development of RESTful Webservices (Rest API's).
+            • Part of the development team responsible for the core modules development of software.
+            • Part of enhancements and deployments of the Software application.
+            • Completely involved in Backend development.
+            • Involving in preparing release back like code, database, alter queries and release version
+            documents. </p>
+        </div>
+        
+      </div>
+      <a href="assets/resume.pdf" download class="btn btn-glow">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Contact Section with Minimalist Form -->
+  <section id="contact" class="contact-section" data-aos="fade-left">
+    <h2>Contact Me</h2>
+    <form action="submit_contact_form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="btn btn-gradient">Send</button>
+    </form>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/pramod-patil-a9a9811a5/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/PramodPatil2"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- External Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    // Initialize AOS for scroll animations
+    AOS.init();
+  </script>
+
+</body>
+</html>
