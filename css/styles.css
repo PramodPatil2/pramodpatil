@@ -235,3 +235,165 @@ body {
 .social-links a:hover {
   color: #ff6b6b;
 }
+
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('../assets/clean-bg.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.profile-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+.profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1200px;
+}
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.profile-text {
+  margin-top: 30px;
+  margin-left: 0; /* Remove left margin on small screens */
+  text-align: center;
+}
+.profile-text h2 {
+  font-size: 2rem;
+}
+.profile-text p {
+  font-size: 1rem;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Profile Section for Mobile */
+  .profile-section {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-text h2 {
+    font-size: 2rem;
+  }
+
+  .profile-text p {
+    font-size: 1rem;
+  }
+
+  /* Resume Section for Mobile */
+  .resume-section {
+    padding: 50px 20px;
+  }
+  .resume-section h2 {
+    font-size: 2rem;
+  }
+  .resume-grid {
+    grid-template-columns: 1fr; /* Stacks cards in one column */
+  }
+  
+  .card {
+    padding: 20px;
+  }
+
+  /* Contact Section for Mobile */
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contact-section input, .contact-section textarea {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Queries for Smaller Devices (e.g., phones) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .btn-primary {
+    font-size: 0.8rem;
+  }
+
+  .resume-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .profile-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-text p {
+    font-size: 0.9rem;
+  }
+
+  .contact-section input, .contact-section textarea {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .contact-section button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
